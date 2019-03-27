@@ -11,7 +11,7 @@ main(){
 	int contador = 1, divisor = 2;
 	int fila = 0, columna = 0;
 	int potencia = 0;
-	int tabla[128][10];
+	int tabla[130][10];
 	
 	printf("Ingrese el numero de variables que desea: ");
 	scanf("%d", &numero);
@@ -26,9 +26,9 @@ main(){
 		do {
 			for (int fila=i; fila<i+result; fila++){
 				if(contador%2==0){
-					tabla[fila][columna] = 0;
-				} else {
 					tabla[fila][columna] = 1;
+				} else {
+					tabla[fila][columna] = 0;
 				}
 			}
 			contador=contador+1;
